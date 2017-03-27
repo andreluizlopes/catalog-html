@@ -1,0 +1,64 @@
+$green: #00AE7C;
+$white: #FFFFFF;
+$black: #000;
+$gray4: #CCC;
+$gray5: #D6D6D6;
+$gray6: #F0F0F0;
+$redDft: #E74C3C;
+$colorFacebook: #3b5998;
+$colorTwitter: #55acee;
+$colorTextPrimary: #000000;
+$colorTextSecondary: #4A4A4A;
+$colorTextTertiary: #858585;
+$colorError: $redDft;
+
+/*System colors*/
+
+$callToAction: $green;
+$colorTextDefault: $black;
+$colorBorderDefault: #CCC;
+$colorLink: $colorTextSecondary;
+$colorLinkHover: lighten($colorLink, 20%);
+$colorBgDefault: #F0F0F0;
+$colorLinkClose: $colorLink;
+$colorLinkCloseHover: $colorLinkHover;
+
+// Fonts
+$base-font-family: "Roboto", Helvetica, Verdana, Arial, sans-serif;
+$base-font-size: 100%;
+$fontSizeDefaultMobile: 14px;
+$fontFamilyHeader: 'Roboto',
+sans-serif;
+$fontFamilyDefault: 'Roboto',
+Arial,
+sans-serif;
+$fontSizeSmallDesk: 11px;
+$fontSizeDefaultDesk: 12px;
+$fontSizeMediumDesk: 14px;
+$fontSizeLargeDesk: 16px;
+$fontSizeBigDesk: 21px;
+$fontSizeHugeDesk: 24px;
+$fontSizeSmallMobile: 12px;
+$fontSizeDefaultMobile: 14px;
+$fontSizeMediumMobile: 16px;
+$fontSizeLargeMobile: 18px;
+$fontSizeBigMobile: 21px;
+$fontSizeHugeMobile: 26px;
+$timeTransitionHover: 0.5s;
+
+
+/*******************************
+             Padding
+*******************************/
+
+$paddingButtonDesk: 9px 10px 11px 10px;
+$paddingInputMobile: 10px 15px;
+$paddingInputDesk: 7px 10px;
+
+/*******************************
+             Form
+*******************************/
+
+$heightElementsFormMobile: 41px;
+$heightElementsFormDesk: 34px;
+$borderRadiusForm: 3px;

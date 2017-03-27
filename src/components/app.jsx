@@ -4,6 +4,8 @@ import React from 'react';
 import TodosList from './todos-list';
 import CreateTodo from './create-todo';
 import ComponentTest from './component-test';
+import Header from './header';
+import Catalog from './catalog';
 
 
 
@@ -29,8 +31,19 @@ export default class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>React Todos</h1>
-                <ComponentTest />
+                <Header />
+                <Catalog />
+                <div className="container">
+                    <h1>React Todos</h1>
+                    <div className="row">
+                        <div className="col-6-sm">
+                            <ComponentTest />
+                        </div>
+                        <div className="col-6-sm">
+                            <ComponentTest />
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

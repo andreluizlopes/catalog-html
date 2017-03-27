@@ -1,0 +1,201 @@
+$borderRadiusBtn: 3px;
+$paddingButtonMobile: 12px 0;
+.dft {
+    &.button {
+        -webkit-border-radius: $borderRadiusBtn;
+        -moz-border-radius: $borderRadiusBtn;
+        -ms-border-radius: $borderRadiusBtn;
+        border-radius: $borderRadiusBtn;
+        line-height: 1;
+        padding: $paddingButtonMobile;
+        display: inline-block;
+        font-size: $fontSizeDefaultMobile;
+        border-style: solid;
+        border-width: 1px;
+        border-color: $gray4;
+        color: $colorTextSecondary;
+        background: $gray6;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        box-sizing: border-box;
+        outline: none;
+        &:hover:not([disabled]) {
+            background-color: lighten($gray6, 5%);
+        }
+        &.icon-only {
+            padding: 12px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            border-radius: 50%;
+        }
+        /*Size*/
+        &.small {
+            font-size: $fontSizeSmallMobile;
+            padding: 8px 15px;
+            &.icon-only {
+                padding: 10px;
+            }
+        }
+        &.medium {
+            font-size: $fontSizeMediumMobile;
+            &.icon-only {
+                padding: 15px;
+            }
+        }
+        &.large {
+            font-size: $fontSizeLargeMobile;
+            padding: 11px 20px 13px 20px;
+            &.icon-only {
+                padding: 16px;
+            }
+        }
+        &.big {
+            font-size: $fontSizeBigMobile;
+            padding: 14px 20px 16px 20px;
+            &.icon-only {
+                padding: 18px;
+            }
+        }
+        /*Types*/
+        &.primary:not(.toggle) {
+            background: $callToAction;
+            border-color: $callToAction;
+            color: $white;
+            &:hover:not([disabled]) {
+                background-color: lighten($callToAction, 5%);
+                border-color: lighten($callToAction, 5%);
+            }
+        }
+        &.secondary:not(.toggle) {
+            border-color: $callToAction;
+            color: $callToAction;
+            background: $white;
+            &:hover:not([disabled]) {
+                background: $white;
+                border-color: lighten($callToAction, 5%);
+                color: lighten($callToAction, 5%);
+            }
+        }
+        /*Social*/
+        &.facebook:not(.toggle) {
+            background: $colorFacebook;
+            border-color: $colorFacebook;
+            color: $white;
+            &:hover:not([disabled]) {
+                background-color: lighten($colorFacebook, 5%);
+                border-color: lighten($colorFacebook, 5%);
+            }
+            i {
+                margin-right: 5px;
+            }
+        }
+        &.twitter:not(.toggle) {
+            background: $colorTwitter;
+            border-color: $colorTwitter;
+            color: $white;
+            &:hover:not([disabled]) {
+                background-color: lighten($colorTwitter, 5%);
+                border-color: lighten($colorTwitter, 5%);
+            }
+            i {
+                margin-right: 5px;
+            }
+        }
+        &.icon {
+            text-indent: 0;
+            i {
+                margin-right: 5px;
+            }
+        }
+        &.toggle {
+            i {
+                margin-right: 5px;
+            }
+            &.is-active i,
+            &:hover i {
+                color: $callToAction;
+                &.icon-heart {
+                    color: $redDft;
+                }
+            }
+            border-color: transparent;
+            background: transparent;
+        }
+        /*Variations*/
+        &.spaced {
+            margin: 5px 0px;
+        }
+        &.fluid {
+            width: 100%;
+        }
+        &:disabled,
+        &[disabled],
+        &.is-disabled {
+            opacity: 0.5;
+            cursor: default;
+            cursor: not-allowed;
+            pointer-events:none;
+        }
+    }
+}
+
+a.dft.button {
+    text-decoration: none;
+}
+
+@media screen and (min-width:767px) {
+    .dft {
+        &.button {
+            padding: $paddingButtonDesk;
+            font-size: $fontSizeDefaultDesk;
+            &.icon-only {
+                padding: 8px;
+            }
+            /*Size*/
+            &.small {
+                font-size: $fontSizeSmallDesk;
+                padding: 5px 10px 7px 10px;
+                &.icon-only {
+                    padding: 6px;
+                }
+            }
+            &.medium {
+                font-size: $fontSizeMediumDesk;
+                padding: 10px 15px 12px 15px;
+                &.icon-only {
+                    padding: 11px;
+                }
+            }
+            &.large {
+                font-size: $fontSizeLargeDesk;
+                padding: 11px 15px 13px 15px;
+                &.icon-only {
+                    padding: 12px;
+                }
+            }
+            &.big {
+                font-size: $fontSizeBigDesk;
+                padding: 12px 15px 14px 15px;
+                &.icon-only {
+                    padding: 13px;
+                }
+            }
+            span {
+                vertical-align: -webkit-baseline-middle;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .dft {
+        &.button {
+            &.fluid-m{
+                width: 100%;
+            }
+        }
+    }
+}

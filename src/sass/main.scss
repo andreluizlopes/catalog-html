@@ -1,6 +1,9 @@
+@import "helpers/variables";
+@import "base/reset";
+@import "base/grid";
+@import "base/typography";
+@import "components/buttons";
+
 body  {
     background: red;
-    h1 {
-        color: aqua;
-    }
 }
